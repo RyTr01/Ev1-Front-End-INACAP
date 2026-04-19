@@ -209,7 +209,7 @@ hr{
     margin: 10px 0;
 }
 
-#grid-layout{
+.grid-layout{
     width: 95%;
     margin: 0 auto;
     display: grid;
@@ -247,12 +247,14 @@ hr{
     padding: 1.5rem;
     background-color: rgba(0,125,50,1);
     border-bottom: solid rgba(0, 100, 50, 0.9) 3px;
+    color: lightgreen
 }
 
 .tabla td{
     font-size:1.5rem;
     padding: 1rem;
     border-bottom: solid rgba(0,100,50,0.9) 3px;
+    color: rgb(175, 255, 175);
 }
 
 .tabla tr{
@@ -274,23 +276,69 @@ tr:hover, li:hover{
     background-color: rgba(0,125,50,1);
     padding: 0.75rem;
     padding-bottom: 0.75rem;
+    color: lightgreen;
 }
 
 .lista ul, .lista ol{
     font-size: 1.25rem;
 }
 
-ul li, ol li{
+.lista ul li, .lista ol li{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     border-bottom: darkgreen solid 1px;
+    color: rgb(175,255,175);
 } 
 
-ul, ol{
+.lista ul, .lista ol{
     list-style-position: inside;
     padding-left: 1rem;
 }
 
-.last-li{
+.lista .last-li{
     border-bottom: none;
+}
+.grid-layout-proyectos{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    background-color: rgba(94, 188, 94,1);
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    justify-content: stretch;
+    padding: 2.5rem;
+}
+
+#proyectos a{
+    text-decoration: none;
+    color: rgb(175,255,175);
+}
+
+#proyectos p{
+    font-size: 1.25rem;
+}
+
+#proyectos figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap:1.5rem;
+    background-color: rgba(25, 100, 25,1);
+    border-radius: 10px;
+    height: 30rem;
+}
+
+#proyectos figcaption{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+#proyectos img{
+    width: 15rem;
+    border-radius: 10px;
+    align-items: center;
 }
