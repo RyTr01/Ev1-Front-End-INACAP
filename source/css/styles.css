@@ -133,23 +133,24 @@ main {
 
 .contenedor-texto p{
     margin: 15px 0px;
+    font-size: 1.25rem;
 }
 
-.sobre-mi{
+.seccion{
     display: flex;
     flex-grow: 2;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
     padding: 40px;
-    max-width: 950px;
+    max-width: 95rem;
     background: linear-gradient(to right, rgba(100,200,100,0.9), rgba(200,255,200,0.9));
     border-radius: 30px;
     box-shadow: 0px 10px 30px rgba(0,0,0,1);
     margin-bottom: 40px;
 }
 
-.texto-sobre-mi{
+.texto-seccion{
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -158,13 +159,21 @@ main {
     text-align: left;
 }
 
-.texto-sobre-mi h2{
-    text-decoration: underline rgb(81, 46, 6, 1) 3px;
-    margin-bottom: 2rem;
+.texto-seccion h2{
+    font-size: 2.5rem;
+    text-decoration: underline rgba(81, 46, 6, 0.75) 3px;
+    margin-bottom: 1rem;
 }
 
-#textosubtitulosobremi{
-    margin-bottom: 1rem;
+.texto-seccion p{
+    font-size: 1.25rem;
+}
+
+.texto-subtitulo{
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: rgba(50,50,50,0.9);
 }
 
 .aside-sobre-mi{
@@ -176,12 +185,15 @@ main {
 
 .aside-sobre-mi p{
     color:white;
+    font-size: 1.25rem;
 }
 
 .aside-sobre-mi h3{
     text-decoration: underline rgba(0,100,50,1) 3px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: white;
+    font-size: 1.5rem;
+    text-decoration: underline rgba(255,255,255,0.75);
 }
 
 .barra{
@@ -195,4 +207,90 @@ hr{
     height: 2px;
     background-color: darkgray;
     margin: 10px 0;
+}
+
+#grid-layout{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    background-color: rgba(94, 188, 94,1);
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: auto auto;;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    justify-content: stretch;
+    padding: 2.5rem;
+}
+
+.c1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.c2{
+    grid-column: 1/2;
+    grid-row:-1/2;
+}
+
+.tabla{
+    border-collapse: separate;
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid rgba(0,100,50,0.9) 3px;
+    border-bottom: none;
+    border-spacing: 0;
+}
+
+.tabla th{
+    font-size:1.75rem;
+    padding: 1.5rem;
+    background-color: rgba(0,125,50,1);
+    border-bottom: solid rgba(0, 100, 50, 0.9) 3px;
+}
+
+.tabla td{
+    font-size:1.5rem;
+    padding: 1rem;
+    border-bottom: solid rgba(0,100,50,0.9) 3px;
+}
+
+.tabla tr{
+    background-color: rgba(0, 150, 50, 1);
+}
+
+tr:hover, li:hover{
+    background-color: rgba(0,175,65,1);
+}
+
+.lista{
+    background-color: rgba(0,150,50,1);
+    border: solid rgba(0,100,50,0.9) 3px;
+    border-radius: 10px;
+}
+
+.lista h3{
+    font-size: 1.5rem;
+    background-color: rgba(0,125,50,1);
+    padding: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.lista ul, .lista ol{
+    font-size: 1.25rem;
+}
+
+ul li, ol li{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: darkgreen solid 1px;
+} 
+
+ul, ol{
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+.last-li{
+    border-bottom: none;
 }
