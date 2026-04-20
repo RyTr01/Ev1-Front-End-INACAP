@@ -24,12 +24,15 @@
     <main>
         <div class="presentacion">
             <div class="contenedor-texto">
-                <div class="contenedor-imagen"><img src="source/images/Gemini_Generated_Image_79j7fl79j7fl79j7.png" alt="Foto perfil RyTro" class="foto-perfil"></div>
+                <div class="contenedor-imagen"><img src="source/images/RyTroLogo.png" alt="Foto perfil RyTro" class="foto-perfil"></div>
                 <h1>Hola! soy Gabriel Garrido</h1>
                 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=800&duration=2500&pause=1000&color=A15423&center=true&vCenter=true&width=435&lines=Estudiante+de+Ciberseguridad;Linux+y+Ciberseguridad;Entusiasta+de+la+Automatizaci%C3%B3n" alt="Entusiasta de Linux y Ciberseguridad - Entusiasta de la Automatización con Bash y Python" />
                 <p>Entusiasta de crear diversos entornos en los sistemas basados en Linux y también por la automatización con Bash, Python y C++</p>
             </div>
         </div>
+        
+        <!-- Sección "Sobre mí" -->
+        
         <section class="seccion" id="sobre-mi">
             <article class="texto-seccion">
                 <h2>Sobre mí</h2>
@@ -59,6 +62,9 @@
                 </div>
             </aside>
         </section>
+
+        <!-- Sección "Habilidades" -->
+        
         <section class="seccion" id="habilidades">
             <article class="texto-seccion">
                 <h2>Habilidades</h2>
@@ -107,43 +113,106 @@
                 </div>
             </article>
         </section>
+
+        <!-- Sección "Proyectos" -->
+        
         <section class="seccion" id="proyectos">
             <div class="texto-seccion">
                 <h2>Proyectos</h2>
                 <article class="texto-seccion">
                     <div class="grid-layout-proyectos">
-                        <a href="https://www.github.com/RyTr01/ArachnidCrawler" target="_blank">
-                            <figure class="proyectos p1">
-                                <figcaption>Arachnid Crawler</figcaption>
-                                <img src="source/images/ArachnidCrawler.png" alt="ArachnidCrawler-Logo">
-                                <p>Crawler web básico escrito en c++ que descarga el HTML de una página y sirve como base para construir un sistema de exploración de enlaces.</p>
-                            </figure>
-                        </a>
-                        <a href="https://www.github.com/RyTr01/HyperParse" target="_blank">
-                            <figure class="proyectos p1">
-                                <figcaption>HyperParse</figcaption>
-                                <img src="source/images/HyPar.png" alt="HyperParse-Logo">
-                                <p>Un web scraper simple escrito en c++ para automatizar la recopilación de información.</p>
-                            </figure>
-                        </a>
-                        <a href="https://www.github.com/RyTr01/QEMUQS" target="_blank">
-                            <figure class="proyectos p1">
-                                <figcaption>QEMUQS</figcaption>
-                                <img src="source/images/QEMUQS.png" alt="QEMUQS-Logo">
-                                <p>Interfaz CLI en C++, para crear, configurar y ejecutar máquinas virtuales QEMU utilizando un archivo .json</p>
-                            </figure>
-                        </a>
-                        <a href="https://www.github.com/RyTr01/HeadScan" target="_blank">
-                            <figure class="proyectos p1">
-                                <figcaption>HeadScan</figcaption>
-                                <img src="source/images/HeadScan.png" alt="HeadScan-Logo">
-                                <p>Escaner de cabeceras HTTP que permite verificar la presencia de algunas cabeceras críticas en una lista de URLs proporcionadas por el usuario.</p>
-                            </figure>
-                        </a>
+                        <figure class="proyectos-contenedores  p1">
+                            <figcaption>Arachnid Crawler</figcaption>
+                            <img src="source/images/ArachnidCrawler.png" alt="ArachnidCrawler-Logo">
+                            <p>Crawler web básico escrito en c++ que descarga el HTML de una página y sirve como base para construir un sistema de exploración de enlaces.</p>
+                            <a href="https://www.github.com/RyTr01/ArachnidCrawler" target="_blank">> Ver repositorio</a>
+                        </figure>
+                        <figure class="proyectos-contenedores  p2">
+                            <figcaption>HyperParse</figcaption>
+                            <img src="source/images/HyPar.png" alt="HyperParse-Logo">
+                            <p>Un web scraper simple escrito en c++ para automatizar la recopilación de información.</p>
+                            <a href="https://www.github.com/RyTr01/HyperParse" target="_blank">> Ver repositorio</a>
+                        </figure>
+                        <figure class="proyectos-contenedores  p3">
+                            <figcaption>QEMUQS</figcaption>
+                            <img src="source/images/QEMUQS.png" alt="QEMUQS-Logo">
+                            <p>Interfaz CLI en C++, para crear, configurar y ejecutar máquinas virtuales QEMU utilizando un archivo .json</p>
+                            <a href="https://www.github.com/RyTr01/QEMUQS" target="_blank">> Ver repositorio</a>
+                        </figure>
+                        <figure class="proyectos-contenedores  p4">
+                            <figcaption>HeadScan</figcaption>
+                            <img src="source/images/HeadScan.png" alt="HeadScan-Logo">
+                            <p>Escaner de cabeceras HTTP que permite verificar la presencia de algunas cabeceras críticas en una lista de URLs proporcionadas por el usuario.</p>
+                            <a href="https://www.github.com/RyTr01/HeadScan" target="_blank">> Ver repositorio</a>
+                        </figure>
                     </div>
                 </article>
             </div>
         </section>
+
+        <!-- Sección "Contacto" -->
+
+        <section class="seccion" id="contacto">
+            <article class="texto-seccion">
+                <h2>Contacto</h2>
+                <form>
+                    <div class="grid-layout-contacto">
+                        <div class="nombre">
+                            <label for="nombre">Nombre completo</label><br>
+                            <input type="text" id="nombre" placeholder="Tu nombre">
+                        </div>
+                        <div class="correo-electronico">
+                            <label for="correo">Correro Electrónico</label><br>
+                            <input type="email" name="correo" id="correo" placeholder="Tu correo">
+                        </div>
+                        <div class="asunto">
+                            <label for="Seleccion-contacto">Asunto</label><br>
+                            <select name="asunto-select" id="Seleccion-contacto">
+                                <option value="" disabled selected>Selecciona un asunto</option>
+                                <option value="Trabajo-programador">Trabajo de programador</option>
+                                <option value="Trabajo-ciberseguridad">Trabajo SOC</option>
+                                <option value="Consulta">Consulta</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+                        <div class="mensaje">
+                            <label for="mensaje">Mensaje</label><br>
+                            <textarea name="texto" id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" id="Submit" value="> Enviar mensaje">
+                        </div>
+                        <aside class="aside-contacto">
+                            <h3>Información de contacto</h3>
+                            <p><strong>Correo: </strong>garridogabiel54@gmail.com</p><hr>
+                            <p><strong>Teléfono: </strong>+56 9 5009 9102</p><hr>
+                            <p><strong>Github: </strong> <a href="https://www.github.com/RyTr01" target="_blank">github.com/RyTr01</a></p>
+                        </aside>
+                    </div>
+                </form>
+            </article>
+        </section>
+        <footer>
+            <div class="parte-footer">
+                <div class="logo">
+                    <img src="source/images/rytro.jpg" alt="Logo Rytro">
+                    <span>Gabriel Garrido</span>
+                </div>
+                <div class="redes">
+                    <a href="https://www.github.com/RyTr01" target="_blank" class="redes-iconos">GH</a>
+                    <a href="https://www.linkedin.com/in/antonio-g-810924302 " target="_blank" class="redes-iconos">LI</a>
+                    <a href="https://x.com/RyTroKun" target="_blank" class="redes-iconos">X</a>
+                    <a href="https://www.instagram.com/rytro404/" target="_blank" class="redes-iconos">IG</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <hr>
+                <p>&copy; <span id="year"></span> Gabriel Garrido. Todos los derechos reservados.</p>
+            </div>
+        </footer>
     </main>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
