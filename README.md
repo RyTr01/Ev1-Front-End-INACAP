@@ -28,7 +28,7 @@ En este portafolio, busco dar a conocerme en el campo laboral y mostrar mis habi
 ├── source/
 │   ├── images/
 │   ├── css/
-├── README.md
+└── README.md
 ```
 
 ## Lincencia
