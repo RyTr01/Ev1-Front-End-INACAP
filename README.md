@@ -21,3 +21,16 @@ En este portafolio, busco dar a conocerme en el campo laboral y mostrar mis habi
 
 ### Previsualización sin instalar
 <a style="color: green;" href="https://rytr01.github.io/">Ver portafolio en vivo!</a>
+
+## Estructura de proyecto
+```
+├── index.hmtl
+├── source/
+│   ├── images/
+│   ├── css/
+├── README.md
+```
+
+## Lincencia
+
+Licencia MIT
